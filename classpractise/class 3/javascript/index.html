@@ -10,7 +10,7 @@
 	<div id='011132129'>Great</div>
 
 	<script type="text/javascript">
-		document.getElementById('011132129').innerHTML = 'This is my First javascript :)';
+		document.getElementById('011132129').innerHTML = '<p>This is my First javascript :)</p>';
 	</script>
 
 	<script type="text/javascript">
@@ -42,6 +42,24 @@
 	<input type="text" onfocus="this.style.background='red';"
 	onblur="this.style.background='blue';" 
 	>
+
+	<p onmouseover="MakeGreen();"
+	   onmouseout="MakeRed();">Hello!
+	</p>
+
+	<script type="text/javascript">
+		
+		function MakeGreen()
+		{
+			document.getElementById('pi').style.color='green';
+		}
+
+		function MakeRed()
+		{
+			document.getElementById('mew').style.color='red';
+		}
+
+	</script>
 
 </body>
 </html>
